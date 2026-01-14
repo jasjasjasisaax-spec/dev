@@ -1,0 +1,28 @@
+body {
+  font-family: Georgia, serif;
+  background: #f4efe6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#eventBox {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.choice {
+  background: #c8ad7f;
+  border: none;
+}

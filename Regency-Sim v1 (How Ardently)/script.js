@@ -1,3 +1,5 @@
+let yearLog = [];
+
 let player = {
   age: 0,
   health: 100,
@@ -16,6 +18,14 @@ function ageUp() {
     eventText.innerText = `You passed away at age ${player.age}.`;
     return;
   }
+
+  if (yearLog.length > 0) {
+    eventText.innerText =
+      "This year, you: " + yearLog.join(", ") + ".";
+    yearLog = [];
+    updateUI();
+    return;
+}
 
   yearlyEvent();
   updateUI();
@@ -156,6 +166,7 @@ function activity(type) {
     btn.innerText = action.text;
     btn.onclick = () => {
       apply(action.effect);
+      yearLog.push(action.text);
       eventText.innerText = action.text + ".";
       choices.innerHTML = "";
       updateUI();

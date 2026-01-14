@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #efe9dc;
+}
+
+.game {
+  max-width: 420px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+.stats {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.stat {
+  margin-bottom: 8px;
+}
+
+.stat span {
+  font-size: 0.9em;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 6px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  width: 50%;
+  background: #2c7be5;
+}
+
+#health { background: #28a745; }
+#happiness { background: #ffc107; }
+#wealth { background: #6f42c1; }
+#reputation { background: #8b4513; }
+
+.event {
+  background: white;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 90px;
+}
+
+.ageBtn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1.1em;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.activities {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.activities button {
+  flex: 1;
+  margin: 3px;
+  padding: 10px;
+  font-size: 0.9em;
+  border-radius: 6px;
+  border: none;
+  background: #cbb58b;
+}
+
+.choice {
+  margin-top: 6px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #d6c6a1;
+}

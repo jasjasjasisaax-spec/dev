@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regency Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+  <header>
+    <h1>🎩 Regency Life</h1>
+    <p id="age">Age: 0</p>
+  </header>
+
+  <section class="stats">
+    <div class="stat">
+      <span>Health</span>
+      <div class="bar"><div id="health"></div></div>
+    </div>
+
+    <div class="stat">
+      <span>Happiness</span>
+      <div class="bar"><div id="happiness"></div></div>
+    </div>
+
+    <div class="stat">
+      <span>Wealth</span>
+      <div class="bar"><div id="wealth"></div></div>
+    </div>
+
+    <div class="stat">
+      <span>Reputation</span>
+      <div class="bar"><div id="reputation"></div></div>
+    </div>
+  </section>
+
+  <section class="event">
+    <p id="eventText">You are born into Regency England.</p>
+    <div id="choices"></div>
+  </section>
+
+  <button class="ageBtn" onclick="ageUp()">AGE UP</button>
+
+  <nav class="activities">
+    <button onclick="activity('social')">Society</button>
+    <button onclick="activity('career')">Career</button>
+    <button onclick="activity('relationships')">Relationships</button>
+    <button onclick="activity('assets')">Assets</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
